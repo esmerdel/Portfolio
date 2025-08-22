@@ -16,7 +16,7 @@ export function Navbar() {
           <span className="text-white font-bold">L</span>
         </div>
         <div>
-          <h1 className="text-lg font-bold">Leandro Esmerdel</h1>
+          <h1 className="text-lg font-bold">Leandro Esmerdelllll</h1>
           <p className="text-sm text-gray-400">Fullstack Developer</p>
         </div>
       </div>
