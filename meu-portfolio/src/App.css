@@ -1,0 +1,15 @@
+/* App.css limpinho para usar com Tailwind */
+
+/* Remove estilos padrões do template */
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Se precisar de algum estilo global extra, adiciona aqui */
+body {
+  background-color: black; /* fundo preto padrão */
+  color: white;            /* texto branco padrão */
+  font-family: sans-serif; /* fonte padrão */
+}
