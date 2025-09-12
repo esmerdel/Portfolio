@@ -1,10 +1,11 @@
-import Image from "next/image";
-import Header from "./components/Header";
+import Header from "./components/Header"
+import Hero from "./components/Hero"
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-screen bg-transparent">
-      <Header/>
-       </div>
-  );
+    <main className="relative min-h-screen bg-transparent text-white">
+      <Header />
+      <Hero />
+    </main>
+  )
 }
