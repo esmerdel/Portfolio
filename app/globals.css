@@ -25,28 +25,57 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes gradient-flow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes color-swap-pair-dev {
+  0%   { color: #38bdf8; } /* Azul */
+  20%  { color: #22c55e; } /* Verde */
+  40%  { color: #f99a16; } /* Laranja */
+  60%  { color: #a855f7; } /* Azul */
+  80%  { color: #ec4899; } /* Rosa */
+  100% { color: #38bdf8; } /* Azul */
 }
 
-.animate-gradient {
-  background: linear-gradient(270deg, #a855f7, #ec4899, #f97316);
-  background-size: 600% 600%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient-flow 8s ease infinite;
+@keyframes color-swap-pair-creative {
+  0%   { color: #a855f7; } /* Roxo */
+  20%  { color: #38bdf8; } /* Azul */
+  40%  { color: #ec4899; } /* Rosa */
+  60%  { color: #ec4899; } /* Rosa mais claro */
+  80%  { color: #a21caf; } /* Rosa mais escuro (Magenta) */
+  100% { color: #a855f7; } /* Roxo */
 }
 
-.animate-gradient-bg {
-  background: linear-gradient(270deg, #a855f7, #ec4899, #f97316);
-  background-size: 600% 600%;
-  animation: gradient-flow 8s ease infinite;
+.animate-color-dev {
+  animation: color-swap-pair-dev 30s steps(1, end) infinite;
 }
+
+.animate-color-creative {
+  animation: color-swap-pair-creative 30s steps(1, end) infinite;
+}
+
+@keyframes bg-color-swap-dev {
+  0%   { background-color: #38bdf8; }  /* Azul */
+  20%  { background-color: #22c55e; }  /* Verde */
+  40%  { background-color: #f99a16; }  /* Laranja */
+  60%  { background-color: #facc15; }  /* Amarelo */
+  80%  { background-color: #a855f7; }  /* Roxo */
+  100% { background-color: #3b82f6; }  /* Volta Azul */
+}
+
+.animate-bg-color-dev {
+  animation: bg-color-swap-dev 30s steps(1, end) infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
