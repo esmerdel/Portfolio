@@ -1,8 +1,18 @@
+"use client";
+import { motion } from "framer-motion"
 import { Home, User, Briefcase, Code, FolderGit2, Mail } from "lucide-react"
+
+
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full flex items-center justify-between px-60 py-4 backdrop-blur-md bg-black/20 z-50 border-b border-white/10">
+    <motion.header
+  initial={{ y: -50, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="fixed top-0 left-0 w-full flex items-center justify-between px-60 py-4 backdrop-blur-md bg-black/20 z-50 border-b border-white/10"
+>
+
       
       {/* Logo + Nome */}
       <div className="flex items-center gap-3 ml-2">
@@ -48,8 +58,8 @@ export default function Header() {
     <a href="#contact" className="flex items-center px-3 py-1.5 space-x-1.5 text-sm font-medium text-white transition-all duration-300 rounded-full hover:bg-white/10">
       <Mail size={16} /> <span>Contact</span>
     </a>
-  </nav>
+      </nav>
+  </motion.header>
+)
 
-    </header>
-  )
 }

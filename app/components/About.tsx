@@ -2,10 +2,12 @@ import Image from "next/image"
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="relative bg-transparent flex flex-col items-center justify-center min-h-screen px-6 py-20 md:px-20 text-center md:text-left"
-    >
+ <section
+  id="about"
+  className="relative bg-transparent flex flex-col items-center justify-center min-h-screen px-6 py-10 md:px-20 text-center md:text-left -mt-49"
+>
+
+
       {/* Título */}
       <h2 className="mb-12 text-4xl font-extrabold md:text-5xl animate-gradient">
         Sobre mim
