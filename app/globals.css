@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* 🎨 Variáveis globais */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,6 +13,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* 🌙 Tema escuro automático */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,30 +21,38 @@
   }
 }
 
+/* 🧱 Base do body */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ========================================= */
+/* 🔄 ANIMAÇÕES DE COR (SINCRONIZADAS)       */
+/* ========================================= */
+
+/* 🟦 animação universal para texto + bordas (usada em todo o site) */
 @keyframes color-swap-pair-dev {
-  0%   { color: #38bdf8; } /* Azul */
-  20%  { color: #22c55e; } /* Verde */
-  40%  { color: #f99a16; } /* Laranja */
-  60%  { color: #a855f7; } /* Azul */
-  80%  { color: #ec4899; } /* Rosa */
-  100% { color: #38bdf8; } /* Azul */
+  0%   { color: #38bdf8; border-color: #38bdf8; }  /* Azul */
+  20%  { color: #22c55e; border-color: #22c55e; }  /* Verde */
+  40%  { color: #f99a16; border-color: #f99a16; }  /* Laranja */
+  60%  { color: #a855f7; border-color: #a855f7; }  /* Roxo */
+  80%  { color: #ec4899; border-color: #ec4899; }  /* Rosa */
+  100% { color: #38bdf8; border-color: #38bdf8; }  /* Azul */
 }
 
+/* 🌀 variação secundária (ex: palavra “Criativo”) */
 @keyframes color-swap-pair-creative {
-  0%   { color: #a855f7; } /* Roxo */
-  20%  { color: #38bdf8; } /* Azul */
-  40%  { color: #ec4899; } /* Rosa */
-  60%  { color: #ec4899; } /* Rosa mais claro */
-  80%  { color: #a21caf; } /* Rosa mais escuro (Magenta) */
-  100% { color: #a855f7; } /* Roxo */
+  0%   { color: #a855f7; }  /* Roxo */
+  20%  { color: #38bdf8; }  /* Azul */
+  40%  { color: #ec4899; }  /* Rosa */
+  60%  { color: #ec4899; }  /* Rosa claro */
+  80%  { color: #a21caf; }  /* Magenta escuro */
+  100% { color: #a855f7; }  /* Roxo */
 }
 
+/* ✨ Classes de animação de cor */
 .animate-color-dev {
   animation: color-swap-pair-dev 30s steps(1, end) infinite;
 }
@@ -51,114 +61,7 @@ body {
   animation: color-swap-pair-creative 30s steps(1, end) infinite;
 }
 
-@keyframes bg-color-swap-dev {
-  0%   { background-color: #38bdf8; }  /* Azul */
-  20%  { background-color: #22c55e; }  /* Verde */
-  40%  { background-color: #f99a16; }  /* Laranja */
-  60%  { background-color: #facc15; }  /* Amarelo */
-  80%  { background-color: #a855f7; }  /* Roxo */
-  100% { background-color: #3b82f6; }  /* Volta Azul */
-}
-
-.animate-bg-color-dev {
-  animation: bg-color-swap-dev 30s steps(1, end) infinite;
-}
-
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.animate-spin-slow {
-  animation: spin-slow 8s linear infinite;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes color-swap-pair-dev {
-  0%   { border-color: #38bdf8; color: #38bdf8; } /* Azul */
-  20%  { border-color: #22c55e; color: #22c55e; } /* Verde */
-  40%  { border-color: #f99a16; color: #f99a16; } /* Laranja */
-  60%  { border-color: #a855f7; color: #a855f7; } /* Roxo */
-  80%  { border-color: #ec4899; color: #ec4899; } /* Rosa */
-  100% { border-color: #38bdf8; color: #38bdf8; } /* Azul */
-}
-
-.animate-color-swap-pair-dev {
-  animation: color-swap-pair-dev 30s steps(1, end) infinite;
-
-}
-
-
-
-@keyframes star-rotate-smooth {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(180deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.animate-star-rotate-smooth {
-  display: inline-block;
-  animation: star-rotate-smooth 6s ease-in-out infinite;
-}
-
-
-/* animação de cores sincronizada (a mesma do nome) */
-@keyframes color-swap-pair-dev {
-  0%   { color: #38bdf8; }  /* Azul */
-  20%  { color: #22c55e; }  /* Verde */
-  40%  { color: #f99a16; }  /* Laranja */
-  60%  { color: #a855f7; }  /* Roxo */
-  80%  { color: #ec4899; }  /* Rosa */
-  100% { color: #38bdf8; }  /* Azul */
-}
-
-.animate-color-swap-pair-dev {
-  animation: color-swap-pair-dev 30s steps(1, end) infinite;
-}
-
-@keyframes color-swap-pair-dev {
-  0%   { border-color: #38bdf8; color: #38bdf8; }  /* Azul */
-  20%  { border-color: #22c55e; color: #22c55e; }  /* Verde */
-  40%  { border-color: #f99a16; color: #f99a16; }  /* Laranja */
-  60%  { border-color: #a855f7; color: #a855f7; }  /* Roxo */
-  80%  { border-color: #ec4899; color: #ec4899; }  /* Rosa */
-  100% { border-color: #38bdf8; color: #38bdf8; }  /* Azul */
-}
-
-.animate-color-swap-pair-dev {
-  animation: color-swap-pair-dev 30s steps(1, end) infinite;
-}
-
-/* rotação suave do foguete */
-@keyframes star-rotate-smooth {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(180deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.animate-star-rotate-smooth {
-  display: inline-block;
-  animation: star-rotate-smooth 6s ease-in-out infinite;
-}
-
-
-
-/* rotação suave (foguete) */
-@keyframes star-rotate-smooth {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(180deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.animate-star-rotate-smooth {
-  display: inline-block;
-  animation: star-rotate-smooth 6s ease-in-out infinite;
-}
-
-
+/* 🟩 animação para fundo (usada em botões e gradientes animados) */
 @keyframes color-swap-bg-dev {
   0%   { background-color: #38bdf8; }  /* Azul */
   20%  { background-color: #22c55e; }  /* Verde */
@@ -172,3 +75,42 @@ html {
   animation: color-swap-bg-dev 30s steps(1, end) infinite;
 }
 
+/* ========================================= */
+/* 🚀 ANIMAÇÕES DE MOVIMENTO                 */
+/* ========================================= */
+
+/* Rotação lenta (ex: foguete ou ícones) */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Rotação suave de ida e volta (estrela) */
+@keyframes star-rotate-smooth {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(180deg); }
+  100% { transform: rotate(0deg); }
+}
+.animate-star-rotate-smooth {
+  display: inline-block;
+  animation: star-rotate-smooth 6s ease-in-out infinite;
+}
+
+/* ========================================= */
+/* 🌐 COMPORTAMENTO GLOBAL                   */
+/* ========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}

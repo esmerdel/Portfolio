@@ -27,7 +27,7 @@ export default function Hero() {
         transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
         className="relative mb-6"
       >
-        <div className="relative flex items-center gap-2 px-5 py-2 rounded-full bg-black border-3 animate-color-swap-pair-dev shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+        <div className="relative flex items-center gap-2 px-5 py-2 rounded-full bg-black border-2 animate-color-dev shadow-[0_0_12px_currentColor]">
           <span className="text-yellow-400 text-sm animate-star-rotate-smooth">⭐</span>
           <span className="text-sm font-medium text-white">Bem vindo ao meu Universo</span>
         </div>
@@ -98,13 +98,26 @@ export default function Hero() {
         transition={{ delay: 1.0, duration: 0.4, ease: "easeOut" }}
         className="flex gap-6 mt-10 text-2xl text-gray-400"
       >
-        <a href="https://github.com/esmerdel" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <a
+          href="https://github.com/esmerdel"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition"
+        >
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/leandro-esmerdel/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+        <a
+          href="https://www.linkedin.com/in/leandro-esmerdel/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-400 transition"
+        >
           <FaLinkedin />
         </a>
-        <a href="mailto:leandro_esmerdel@hotmail.com" className="hover:text-red-400 transition">
+        <a
+          href="mailto:leandro_esmerdel@hotmail.com"
+          className="hover:text-red-400 transition"
+        >
           <FaEnvelope />
         </a>
       </motion.div>

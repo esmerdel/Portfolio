@@ -20,7 +20,7 @@ export default function Header() {
   <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-lg animate-bg-color-dev">
     <svg
       stroke="currentColor"
-      fill="white"   // ícone fixo branco
+      fill="white"  
       strokeWidth="0"
       viewBox="0 0 640 512"
       className="text-lg animate-spin-slow"
