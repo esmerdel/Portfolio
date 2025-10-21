@@ -3,10 +3,10 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 export default function Contact() {
   return (
     <section id="contact" className="py-20 px-6 max-w-4xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-6 text-purple-400">Get in Touch</h2>
+      <h2 className="text-3xl font-bold mb-6 text-purple-400">Entre em Contato</h2>
       <p className="text-gray-400 mb-12">
-        I'm always open to new opportunities, collaborations and interesting projects.  
-        Feel free to reach out!
+        Estou sempre aberto a novas oportunidades, colaborações e projetos interessantes.  
+        Sinta-se à vontade para entrar em contato!
       </p>
 
       <div className="flex justify-center gap-8">

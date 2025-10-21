@@ -41,22 +41,22 @@ export default function Header() {
 
   <nav className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-full bg-black/50">
     <a href="#home" className="flex items-center px-3 py-1.5 space-x-1.5 text-sm font-medium text-white transition-all duration-300 rounded-full hover:bg-white/10">
-      <Home size={16} /> <span>Home</span>
+      <Home size={16} /> <span>Início</span>
     </a>
     <a href="#about" className="flex items-center px-3 py-1.5 space-x-1.5 text-sm font-medium text-white transition-all duration-300 rounded-full hover:bg-white/10">
-      <User size={16} /> <span>About</span>
+      <User size={16} /> <span>Sobre</span>
     </a>
     <a href="#experience" className="flex items-center px-3 py-1.5 space-x-1.5 text-sm font-medium text-white transition-all duration-300 rounded-full hover:bg-white/10">
-      <Briefcase size={16} /> <span>Experience</span>
+      <Briefcase size={16} /> <span>Experiência</span>
     </a>
     <a href="#skills" className="flex items-center px-3 py-1.5 space-x-1.5 text-sm font-medium text-white transition-all duration-300 rounded-full hover:bg-white/10">
-      <Code size={16} /> <span>Skills</span>
+      <Code size={16} /> <span>Habilidades</span>
     </a>
     <a href="#projects" className="flex items-center px-3 py-1.5 space-x-1.5 text-sm font-medium text-white transition-all duration-300 rounded-full hover:bg-white/10">
-      <FolderGit2 size={16} /> <span>Projects</span>
+      <FolderGit2 size={16} /> <span>Projetos</span>
     </a>
     <a href="#contact" className="flex items-center px-3 py-1.5 space-x-1.5 text-sm font-medium text-white transition-all duration-300 rounded-full hover:bg-white/10">
-      <Mail size={16} /> <span>Contact</span>
+      <Mail size={16} /> <span>Contato</span>
     </a>
       </nav>
   </motion.header>

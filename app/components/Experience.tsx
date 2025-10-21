@@ -30,8 +30,8 @@ export default function Experience() {
         viewport={{ once: true }}
         className="mb-12 text-gray-400 text-lg text-center"
       >
-        Minha trajetória como{" "}
-        <span className="animate-color-dev">Desenvolvedor FullStack</span>
+        Minha trajetória em{" "}
+        <span className="animate-color-dev">Tecnologia da Informação</span>
       </motion.p>
 
       {/* Timeline */}
@@ -59,7 +59,7 @@ export default function Experience() {
               </h3>
               <p className="text-gray-400">Freelancer / Projetos Pessoais</p>
             </div>
-            <span className="text-sm text-gray-400">2024 - Presente</span>
+            <span className="text-sm text-gray-400">2025 - Presente</span>
           </div>
 
           <ul className="mt-4 space-y-2 text-gray-300 list-disc list-inside">
@@ -105,7 +105,7 @@ export default function Experience() {
               </h3>
               <p className="text-gray-400">Receita Federal do Brasil</p>
             </div>
-            <span className="text-sm text-gray-400">2022 - 2024</span>
+            <span className="text-sm text-gray-400">2022 - 2025</span>
           </div>
 
           <ul className="mt-4 space-y-2 text-gray-300 list-disc list-inside">

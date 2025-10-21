@@ -129,7 +129,7 @@ export default function Hero() {
         transition={{ delay: 1.1, duration: 0.5 }}
         className="absolute bottom-7 text-sm text-gray-500 animate-bounce"
       >
-        ↓ Scroll para explorar
+        ↓ Explorar
       </motion.p>
     </motion.section>
   );
