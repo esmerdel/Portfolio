@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Rocket } from "lucide-react";
+import { Database } from "lucide-react";
 
 export default function Hero() {
   const { ref, inView } = useInView({
@@ -28,8 +28,8 @@ export default function Hero() {
         className="relative mb-6"
       >
         <div className="relative flex items-center gap-2 px-5 py-2 rounded-full bg-black border-2 animate-color-dev shadow-[0_0_12px_currentColor]">
-          <span className="text-yellow-400 text-sm animate-star-rotate-smooth">⭐</span>
-          <span className="text-sm font-medium text-white">Bem vindo ao meu Universo</span>
+          <span className="text-yellow-400 text-sm animate-star-rotate-smooth">📊</span>
+          <span className="text-sm font-medium text-white">Explorando o Universo dos Dados</span>
         </div>
       </motion.div>
 
@@ -40,9 +40,9 @@ export default function Hero() {
         transition={{ duration: 0.45, delay: 0.45, ease: "easeOut" }}
         className="text-5xl md:text-7xl font-extrabold leading-tight"
       >
-        <span className="block animate-color-dev">Desenvolvedor FullStack</span>
-        <span className="text-white">& Código</span>{" "}
-        <span className="animate-color-creative">Criativo</span>
+        <span className="block animate-color-dev">Analista de Dados</span>
+        <span className="text-white">Python, SQL &</span>{" "}
+        <span className="animate-color-creative">Power BI</span>
       </motion.h1>
 
       {/* Subtítulo */}
@@ -52,10 +52,11 @@ export default function Hero() {
         transition={{ delay: 0.6, duration: 0.4, ease: [0.25, 0.8, 0.5, 1] }}
         className="mt-6 max-w-2xl text-lg text-gray-300 leading-relaxed"
       >
-        Transformo ideias em{" "}
-        <span className="animate-color-dev">interfaces criativas</span> e{" "}
-        <span className="text-pink-400">experiências digitais envolventes</span>, unindo design
-        moderno e desenvolvimento eficiente para entregar soluções que encantam e funcionam.
+        Transformo dados brutos em{" "}
+        <span className="animate-color-dev">insights estratégicos</span> e{" "}
+        <span className="text-pink-400">decisões baseadas em evidências</span>.
+        Unindo <span className="text-white font-medium">análise, automação e visualização</span>,
+        construo soluções que revelam o verdadeiro valor por trás dos números.
       </motion.p>
 
       {/* Linha decorativa */}
@@ -63,7 +64,7 @@ export default function Hero() {
         initial={{ opacity: 0, scaleX: 0 }}
         animate={inView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }}
         transition={{ delay: 0.75, duration: 0.35, ease: "easeOut" }}
-        className="mx-auto mt-6 h-1 w-40 rounded-full bg-gradient-to-r from-purple-500 via-fuchsia-500 to-indigo-500 origin-left"
+        className="mx-auto mt-6 h-1 w-40 rounded-full bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 origin-left"
       />
 
       {/* Botões */}
@@ -78,8 +79,8 @@ export default function Hero() {
           className="relative flex items-center gap-2 px-6 py-3 font-medium text-white rounded-full border-2 border-gray-700 overflow-hidden transition-transform duration-300 hover:scale-105"
         >
           <span className="absolute inset-0 rounded-full animate-color-bg-dev opacity-80"></span>
-          <Rocket size={18} className="relative z-10 text-white animate-star-rotate-smooth" />
-          <span className="relative z-10">Explore Meu Universo</span>
+          <Database size={18} className="relative z-10 text-white animate-star-rotate-smooth" />
+          <span className="relative z-10">Ver Projetos de Dados</span>
         </a>
 
         <a

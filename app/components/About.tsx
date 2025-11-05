@@ -31,7 +31,7 @@ export default function About() {
           whileInView={{ opacity: 1, scaleX: 1 }}
           transition={{ delay: 0.35, duration: 0.4, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="mt-4 h-1 w-40 rounded-full bg-gradient-to-r from-purple-500 via-fuchsia-500 to-indigo-500 origin-left"
+          className="mt-4 h-1 w-40 rounded-full bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 origin-left"
         />
       </motion.div>
 
@@ -50,7 +50,7 @@ export default function About() {
             alt="Leandro Esmerdel"
             width={220}
             height={220}
-            className="rounded-full border-4 "
+            className="rounded-full border-4"
           />
         </motion.div>
 
@@ -64,15 +64,24 @@ export default function About() {
         >
           <p className="text-lg leading-relaxed">
             Sou graduado em <span className="font-semibold">Administração</span> e em{" "}
-            <span className="font-semibold">Análise e Desenvolvimento de Sistemas</span>, e combino a visão estratégica da área administrativa com a base técnica da tecnologia, o que me permite compreender problemas e soluções de forma integrada.
+            <span className="font-semibold">Análise e Desenvolvimento de Sistemas</span>. 
+            Essa combinação me permite unir a visão estratégica do negócio com a análise técnica dos dados — 
+            transformando números em informações que geram valor e direcionam decisões.
           </p>
 
           <p className="text-lg leading-relaxed">
-            Atualmente, desenvolvo projetos pessoais e realizo freelances na área de desenvolvimento de software, atuando como <span className="font-semibold">Full Stack Developer</span> e aplicando conhecimentos em Python, C#, Laravel, React, PHP e MySQL para criar soluções que geram valor e impacto real.
+            Atualmente, dedico-me a projetos e estudos na área de{" "}
+            <span className="font-semibold">Análise de Dados</span>, explorando ferramentas como{" "}
+            <span className="font-semibold">Python, SQL, Power BI, Pandas, Databricks</span> e conceitos de{" "}
+            <span className="font-semibold">ETL e Data Visualization</span>. 
+            Também aplico minha base técnica em desenvolvimento de software, o que me ajuda a compreender o ciclo completo — 
+            da coleta e tratamento de dados até a apresentação visual e tomada de decisão.
           </p>
 
           <p className="text-lg leading-relaxed">
-            Sempre fui movido pela curiosidade em entender como as coisas funcionam, e foi essa curiosidade que me direcionou para o mundo da tecnologia. Hoje, aplico esse interesse em projetos e estudos contínuos, com o objetivo de aprender, resolver problemas e desenvolver sistemas cada vez mais eficientes e bem estruturados.
+            Sou movido pela curiosidade e pelo desejo de compreender padrões ocultos nas informações. 
+            Acredito que cada dado conta uma história — e meu papel é traduzi-la de forma clara, visual e estratégica, 
+            transformando complexidade em conhecimento acessível.
           </p>
         </motion.div>
       </div>

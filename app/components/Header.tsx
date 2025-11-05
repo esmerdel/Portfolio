@@ -35,7 +35,7 @@ export default function Header() {
   {/* Nome e subtítulo */}
   <div className="flex flex-col leading-tight">
     <span className="text-base font-bold animate-color-dev">Leandro Esmerdel</span>
-    <span className="text-xs text-gray-400">Desenvolvedor FullStack</span>
+    <span className="text-xs text-gray-400">Analista de Dados</span>
   </div>
 </div>
 

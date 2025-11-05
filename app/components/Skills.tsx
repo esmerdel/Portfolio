@@ -2,31 +2,46 @@
 
 import { motion } from "framer-motion";
 import {
-  FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaDocker, FaGitAlt, FaPython, FaLaravel,
+  FaPython,
+  FaDatabase,
+  FaGitAlt,
+  FaDocker,
+  FaAws,
+  FaMicrosoft,
+  FaTable,
 } from "react-icons/fa";
 import {
-  SiNextdotjs, SiTypescript, SiTailwindcss, SiSharp, SiPostgresql,
+  SiPandas,
+  SiNumpy,
+  SiMysql,
+  SiPostgresql,
+  SiPowers,
+  SiDatabricks,
+  SiApacheairflow,
+  SiJupyter,
+  SiGooglecloud,
+  SiSparkar,
 } from "react-icons/si";
-
+import { VscAzureDevops } from "react-icons/vsc";
 export default function Skills() {
   const skills = [
-    { name: "Next.js", icon: <SiNextdotjs className="text-white text-4xl" />, color: "#888888" },
-    { name: "React", icon: <FaReact className="text-sky-400 text-4xl" />, color: "#61dafb" },
-    { name: "TypeScript", icon: <SiTypescript className="text-blue-500 text-4xl" />, color: "#3178c6" },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400 text-4xl" />, color: "#38bdf8" },
-    { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-4xl" />, color: "#f97316" },
-    { name: "CSS", icon: <FaCss3Alt className="text-blue-400 text-4xl" />, color: "#2563eb" },
-    { name: "Git", icon: <FaGitAlt className="text-red-500 text-4xl" />, color: "#ef4444" },
-    { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl" />, color: "#22c55e" },
-
-    { name: "Laravel", icon: <FaLaravel className="text-red-400 text-4xl" />, color: "#f43f5e" },
-
-    { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-500 text-4xl" />, color: "#3b82f6" },
-
-    { name: "C#", icon: <SiSharp className="text-purple-500 text-4xl" />, color: "#a855f7" },
     { name: "Python", icon: <FaPython className="text-yellow-400 text-4xl" />, color: "#facc15" },
-
-
+    { name: "SQL", icon: <FaDatabase className="text-blue-400 text-4xl" />, color: "#60a5fa" },
+    { name: "Power BI", icon: <SiPowers className="text-yellow-500 text-4xl" />, color: "#fbbf24" },
+    { name: "Pandas", icon: <SiPandas className="text-purple-400 text-4xl" />, color: "#a855f7" },
+    { name: "NumPy", icon: <SiNumpy className="text-sky-400 text-4xl" />, color: "#38bdf8" },
+    { name: "Databricks", icon: <SiDatabricks className="text-red-500 text-4xl" />, color: "#ef4444" },
+    { name: "PySpark", icon: <SiSparkar className="text-orange-400 text-4xl" />, color: "#fb923c" },
+    { name: "Airflow", icon: <SiApacheairflow className="text-cyan-400 text-4xl" />, color: "#22d3ee" },
+    { name: "MySQL", icon: <SiMysql className="text-blue-500 text-4xl" />, color: "#3b82f6" },
+    { name: "PostgreSQL", icon: <SiPostgresql className="text-indigo-400 text-4xl" />, color: "#818cf8" },
+    { name: "Jupyter", icon: <SiJupyter className="text-orange-400 text-4xl" />, color: "#fb923c" },
+    { name: "Docker", icon: <FaDocker className="text-sky-400 text-4xl" />, color: "#38bdf8" },
+    { name: "Git", icon: <FaGitAlt className="text-red-500 text-4xl" />, color: "#ef4444" },
+    { name: "Azure DevOps", icon: <VscAzureDevops className="text-blue-500 text-4xl" />, color: "#3b82f6" },
+    { name: "AWS", icon: <FaAws className="text-yellow-500 text-4xl" />, color: "#facc15" },
+    { name: "Google Cloud", icon: <SiGooglecloud className="text-sky-400 text-4xl" />, color: "#38bdf8" },
+    { name: "Excel Avançado", icon: <FaTable className="text-green-400 text-4xl" />, color: "#22c55e" },
   ];
 
   return (
@@ -36,12 +51,12 @@ export default function Skills() {
     >
       {/* === BLOBS FLUTUANTES === */}
       <motion.div
-        className="absolute w-[400px] h-[400px] bg-purple-600/30 rounded-full blur-[180px] top-[20%] left-[25%]"
+        className="absolute w-[400px] h-[400px] bg-blue-600/30 rounded-full blur-[180px] top-[20%] left-[25%]"
         animate={{ opacity: [0, 0.4, 0], scale: [0.8, 1.2, 0.8] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
-        className="absolute w-[350px] h-[350px] bg-blue-500/30 rounded-full blur-[160px] top-[60%] right-[20%]"
+        className="absolute w-[350px] h-[350px] bg-cyan-500/30 rounded-full blur-[160px] top-[60%] right-[20%]"
         animate={{ opacity: [0, 0.35, 0], scale: [0.9, 1.3, 0.9] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 3 }}
       />
@@ -56,12 +71,12 @@ export default function Skills() {
         Habilidades & Tecnologias
       </motion.h2>
 
-      {/* === BARRINHA DE ENERGIA === */}
+      {/* === BARRINHA === */}
       <motion.div
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="w-40 h-1 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-indigo-500 rounded-full mb-8 origin-left"
+        className="w-40 h-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 rounded-full mb-8 origin-left"
       />
 
       {/* Subtítulo */}
@@ -71,8 +86,8 @@ export default function Skills() {
         transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }}
         className="text-center text-gray-400 mb-12 max-w-xl z-10"
       >
-        As ferramentas e tecnologias que utilizo para{" "}
-        <span className="animate-color-dev">transformar ideias em código</span>.
+        As ferramentas que utilizo para{" "}
+        <span className="animate-color-dev">coletar, transformar e visualizar dados</span>.
       </motion.p>
 
       {/* === GRID DE SKILLS === */}
@@ -87,13 +102,11 @@ export default function Skills() {
             className="relative group bg-black/40 border border-gray-700 rounded-xl p-6 flex flex-col items-center justify-center shadow-md 
                        transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] overflow-hidden"
           >
-            {/* Glow colorido suave */}
             <div
               className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-50 transition-opacity duration-700 blur-[30px]"
               style={{ background: skill.color }}
             ></div>
 
-            {/* Blur pulsante leve */}
             <motion.div
               className="absolute inset-0 rounded-xl blur-[50px] opacity-20"
               style={{ background: skill.color }}
@@ -101,21 +114,27 @@ export default function Skills() {
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             ></motion.div>
 
-            {/* Ícone com brilho branco suave */}
             <motion.div
               className="relative z-10 flex flex-col items-center justify-center"
-              animate={{ filter: ["drop-shadow(0_0_0px_white)", "drop-shadow(0_0_6px_white)", "drop-shadow(0_0_0px_white)"] }}
+              animate={{
+                filter: [
+                  "drop-shadow(0_0_0px_white)",
+                  "drop-shadow(0_0_6px_white)",
+                  "drop-shadow(0_0_0px_white)",
+                ],
+              }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
               {skill.icon}
               <p className="mt-3 text-gray-300 font-medium">{skill.name}</p>
             </motion.div>
 
-            {/* Barrinha de progresso */}
             <div className="relative w-full mt-4 h-1.5 bg-gray-800 rounded-full overflow-hidden z-10">
               <motion.div
                 className="absolute left-0 top-0 h-full rounded-full"
-                style={{ background: `linear-gradient(90deg, ${skill.color}, transparent)` }}
+                style={{
+                  background: `linear-gradient(90deg, ${skill.color}, transparent)`,
+                }}
                 initial={{ width: "0%" }}
                 whileInView={{ width: "85%" }}
                 transition={{ delay: idx * 0.1, duration: 1.2, ease: "easeOut" }}
@@ -133,10 +152,10 @@ export default function Skills() {
         className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-16 w-full z-10"
       >
         {[
-          { value: "9+", label: "Tecnologias" },
-          { value: "5+", label: "Projetos" },
-          { value: "1+", label: "Anos de Experiência" },
-          { value: "∞", label: "Cafés Consumidos" },
+          { value: "15+", label: "Tecnologias de Dados" },
+          { value: "5+", label: "Projetos em Desenvolvimento" },
+          { value: "1+", label: "Anos de Experiência Técnica" },
+          { value: "∞", label: "Consultas SQL Executadas" },
         ].map((stat, idx) => (
           <motion.div
             key={idx}

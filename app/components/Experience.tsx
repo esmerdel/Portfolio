@@ -30,14 +30,14 @@ export default function Experience() {
         viewport={{ once: true }}
         className="mb-12 text-gray-400 text-lg text-center"
       >
-        Minha trajetória em{" "}
-        <span className="animate-color-dev">Tecnologia da Informação</span>
+        Um caminho que une{" "}
+        <span className="animate-color-dev">Administração, Tecnologia e Dados</span>
       </motion.p>
 
       {/* Timeline */}
       <div className="relative w-full max-w-4xl space-y-12">
 
-        {/* Item 1 — Desenvolvedor FullStack */}
+        {/* Item 1 — Analista de Dados Autônomo */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -55,24 +55,53 @@ export default function Experience() {
           <div className="flex justify-between items-start">
             <div>
               <h3 className="text-xl font-bold animate-color-dev">
-                Desenvolvedor FullStack
+                Analista de Dados (Autônomo)
               </h3>
-              <p className="text-gray-400">Freelancer / Projetos Pessoais</p>
+              <p className="text-gray-400">Projetos Pessoais e Estudos Aplicados</p>
             </div>
             <span className="text-sm text-gray-400">2025 - Presente</span>
           </div>
 
           <ul className="mt-4 space-y-2 text-gray-300 list-disc list-inside">
-            <li>Desenvolvimento de aplicações web completas com foco em desempenho e usabilidade.</li>
-            <li>Criação de APIs RESTful em Laravel e integração com front-end em React.</li>
-            <li>Automação de tarefas e coleta de dados com Python e Puppeteer.</li>
-            <li>Modelagem de banco de dados MySQL com consultas otimizadas.</li>
-            <li>Deploy e versionamento com Git e GitHub, aplicando boas práticas de CI/CD.</li>
+            <li>
+              Desenvolvimento de projetos próprios voltados à{" "}
+              <span className="text-white font-semibold">Análise de Dados</span>, 
+              aplicando conceitos de ETL, visualização e modelagem.
+            </li>
+            <li>
+              Manipulação e tratamento de grandes volumes de dados utilizando{" "}
+              <span className="text-white font-semibold">Python (Pandas, NumPy)</span> e{" "}
+              <span className="text-white font-semibold">SQL</span>.
+            </li>
+            <li>
+              Criação de dashboards interativos e relatórios estratégicos em{" "}
+              <span className="text-white font-semibold">Power BI</span> e{" "}
+              <span className="text-white font-semibold">Excel Avançado</span>.
+            </li>
+            <li>
+              Estudos contínuos sobre{" "}
+              <span className="text-white font-semibold">Databricks, PySpark e Data Lake</span> 
+              com foco em engenharia e performance de dados.
+            </li>
+            <li>
+              Aplicação de boas práticas de versionamento e automação de processos com{" "}
+              <span className="text-white font-semibold">Git</span> e{" "}
+              <span className="text-white font-semibold">Python</span>.
+            </li>
           </ul>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-4">
-            {["Laravel", "React", "PHP", "C#", "Python", "MySQL", "Git"].map((tech) => (
+            {[
+              "Python",
+              "SQL",
+              "Power BI",
+              "Pandas",
+              "Databricks",
+              "PySpark",
+              "Git",
+              "ETL",
+            ].map((tech) => (
               <span
                 key={tech}
                 className="px-3 py-1 text-sm rounded-full bg-gray-800 text-gray-300 border border-gray-700"
@@ -83,7 +112,7 @@ export default function Experience() {
           </div>
         </motion.div>
 
-        {/* Suporte de TI */}
+        {/* Item 2 — Experiências anteriores */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -101,23 +130,25 @@ export default function Experience() {
           <div className="flex justify-between items-start">
             <div>
               <h3 className="text-xl font-bold text-pink-400">
-                Suporte de TI / Helpdesk
+                Experiências Anteriores
               </h3>
-              <p className="text-gray-400">Receita Federal do Brasil</p>
+              <p className="text-gray-400">Administração e Tecnologia da Informação</p>
             </div>
-            <span className="text-sm text-gray-400">2022 - 2025</span>
+            <span className="text-sm text-gray-400">Até 2024</span>
           </div>
 
-          <ul className="mt-4 space-y-2 text-gray-300 list-disc list-inside">
-            <li>Suporte técnico e manutenção de sistemas, redes e estações de trabalho.</li>
-            <li>Gestão de ativos e automação de processos com scripts em Python.</li>
-            <li>Coleta e estruturação de dados para relatórios internos e administrativos.</li>
-            <li>Atendimento e resolução de incidentes garantindo continuidade operacional.</li>
-          </ul>
+          <p className="mt-4 text-gray-300 leading-relaxed">
+            Atuei nas áreas de <span className="font-semibold text-white">Administração</span> e{" "}
+            <span className="font-semibold text-white">Suporte de TI</span>, experiências que fortaleceram 
+            minha visão analítica, organização e capacidade de resolver problemas técnicos. 
+            Essa base sólida me conduz hoje ao universo dos dados — unindo 
+            <span className="text-white font-semibold"> raciocínio lógico, curiosidade e tecnologia </span>
+            para transformar informação em valor real.
+          </p>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-4">
-            {["Suporte", "Python", "Excel", "Automação", "Redes"].map((tech) => (
+            {["Administração", "TI", "Excel", "Análise de Processos", "Organização"].map((tech) => (
               <span
                 key={tech}
                 className="px-3 py-1 text-sm rounded-full bg-gray-800 text-gray-300 border border-gray-700"
