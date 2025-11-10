@@ -9,16 +9,24 @@ export default function Projects() {
       tech: ["Laravel", "MySQL", "Tailwind", "FullCalendar"],
       image: "/barbearia.png",
       github: "https://github.com/esmerdel/naregua",
-      demo: "https://naregua-demo.vercel.app",
     },
     {
       title: "Tech News Scraper",
       description:
         "Aplicação backend desenvolvida em Node.js que coleta notícias de tecnologia, armazena em banco de dados e envia automaticamente para um grupo no Telegram.",
       tech: ["Node.js", "Puppeteer", "MySQL", "Telegram API"],
-      image: "/scraper.png", // 👈 imagem dentro da pasta /public
+      image: "/scraper.png",
       github: "https://github.com/esmerdel/scraper-noticias",
-      demo: "",
+
+    },
+    {
+      title: "Classe de Aula",
+      description:
+        "Sistema web educacional com API RESTful em Django, autenticação JWT e painel do aluno integrado ao frontend em HTML, CSS e JavaScript.",
+      tech: ["Python", "Django", "API RESTful", "JWT", "HTML", "CSS", "JavaScript"],
+      image: "/classeaula.png",
+      github: "https://github.com/esmerdel/Classe_Aula",
+
     },
   ]
 
@@ -75,16 +83,6 @@ export default function Projects() {
                     className="flex items-center gap-1 text-gray-300 hover:text-purple-400"
                   >
                     <FaGithub /> Code
-                  </a>
-                )}
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1 text-gray-300 hover:text-purple-400"
-                  >
-                    <FaExternalLinkAlt /> Demo
                   </a>
                 )}
               </div>
