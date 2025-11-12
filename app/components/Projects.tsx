@@ -28,6 +28,16 @@ export default function Projects() {
       github: "https://github.com/esmerdel/Classe_Aula",
 
     },
+    {
+      title: "ERP - Sistema de Gestão",
+      description:
+        "ERP completo com backend em .NET Core e SQL Server, integração via API RESTful e frontend em Angular para gerenciamento de cadastros, estoque e processos internos.",
+      tech: ["C#", ".NET Core", "API RESTful", "SQL Server", "Entity Framework", "Angular", "TypeScript"],
+      image: "/erp.png",
+      github: "https://github.com/esmerdel/ERP",
+    },
+
+
   ]
 
   return (
